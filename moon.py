@@ -30,7 +30,7 @@ bot = Client(
 # START KOMUTU
 @bot.on_message(filters.command(["start"]))
 def help(client, message):
-    helptext = f'**📥 Merhaba! Ben Ahri, Sizlere Video Müzik İndirmeniz İçin Hizmet Vericem.\n\n» /bul <Müzik İsmi!>\n Müzik İndirmek İçin!-\n» /vbul <Video Adı!>\n - Video İndirmek İçin!**'
+    helptext = f'**📥 Merhaba! Ben Ahri, Sizlere Video Müzik İndirmeniz İçin Hizmet Vericem.\n\n» /bul <Müzik İsmi!> Müzik İndirmek İçin!\n» /vbul <Video Adı!> Video İndirmek İçin!**'
     message.reply_text(
         text=helptext, 
         quote=False,
@@ -40,7 +40,7 @@ def help(client, message):
                   ],[
                     InlineKeyboardButton('📚 ᴋᴀɴᴀʟ', url=f'https://t.me/zeusprochecker')
                   ],[
-                    InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', url=f'https://t.me/rahketinc')
+                    InlineKeyboardButton('👤 ᴏᴡɴᴇʀ', url=f'https://t.me/rahmetinc')
                   ]
             ]
         )
